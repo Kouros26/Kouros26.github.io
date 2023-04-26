@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="images/icon.png">
+	<title>Kouros' Portfolio</title>
+	<link rel="stylesheet" href="fontAwesome/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="" class="logo" />
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Works</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="header-text">
+				<h1>Hello there,<br> I'm <span>Kouros</span> Lotfi</h1>
+				<p>Student Engine/Gameplay programmer</p>
+			</div>
+
+		</div>
+	</div>
+
+	<!--------portfolio------------>
+
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="images/MRGA.png">
+					<div class="layer">
+						<h3>Make Racing Great Again</h3>
+						<p>
+							Unreal Engine 5.1 - Racing Game with AIs, LAN multiplayer (unfinished), and Items<br><br>
+							<span>Team :</span><br>3 programmers and 7 artists<br><span>Time :</span><br>3 weeks<br><span>My major contributions :</span><br>3C<br>LAN Multiplayer
+						</p>
+						<a href="https://github.com/Angel-2180/Make-Racing-Great-Again" class="link" target="_blank"><i class="fa-brands fa-github" style="color: #f0f1f3;"></i></a>
+						<a href="https://www.youtube.com/watch?v=I8aNQ_bkMBQ" class="link" target="_blank"><i class="fa-brands fa-youtube" style="color: #f0f1f3;"></i></a>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="images/thunderbird.png">
+					<div class="layer">
+						<h3>ThunderBird</h3>
+						<p>
+							Unity - Overcooked-like party game in local multiplayer<br><br>
+							<span>Team :</span><br>1 programmer, 3 game designers and 2 artists<br><span>Time :</span><br>3 days<br><span>My major contributions :</span><br>Most of the code
+						</p>
+						<a href="https://github.com/Kouros26/ThunderBird" class="link" target="_blank"><i class="fa-brands fa-github" style="color: #f0f1f3;"></i></a>
+						<a href="https://youtu.be/TEbnJylCcWg" class="link" target="_blank"><i class="fa-brands fa-youtube" style="color: #f0f1f3;"></i></a>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="images/gigengine.png">
+					<div class="layer">
+						<h3>Gigengine<span>(WIP)</span></h3>
+						<p>
+							Multithreaded engine in OpenGL 4.6 C++ 20, featuring scripting in lua, physics (with BULLET), and an editor<br><br>
+							<span>Team :</span><br>3 programmers<br><span>Time :</span><br>Ends on June the 1st (3 months)<br><span>My major contributions :</span><br>Scene graph using Quaternions<br>Physics
+						</p>
+						<a href="https://github.com/Kouros26/Gigen-Engine" class="link" target="_blank"><i class="fa-brands fa-github" style="color: #f0f1f3;"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn">See More</a>
+		</div>
+	</div>
+
+	<!-- About -->
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col1">
+					<img src="images/me.jpg"/>
+					<a href="images/CV-KourosLotfi.pdf" download class="btn btn2">Download CV</a>
+				</div>
+				<div class="about-col2">
+					<h1 class="sub-title">About Me</h1>
+					<p>I'm a second year Engine/Gameplay programmer at Isart Digital Montreal, with a preference for making 3Cs or animation programming.</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+						<p class="tab-links" onclick="openTab('experience')">Experience</p>
+						<p class="tab-links" onclick="openTab('education')">Diplomas</p>
+					</div>
+
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Languages</span><br>C++<br>C#<br>C</li>
+							<li><span>Engines</span><br>Unreal Engine 5.x<br>Unity</li>
+							<li><span>APIs</span><br>OpenGL (Legacy to 4.6)<br>Vulkan</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>Work</span><br>McDonald's employee - July 2021 to October 2021</li>
+							<li><span>Projects - Gameplay</span><br>Car racing game (Unreal Engine 5.1)<br>Overcooked-like party game (Unity)</li>
+							<li><span>Projects - Engine</span><br>Game Engine (OpenGL 4.6, GLFW, BULLET)<br>Animation Programming<br>Vulkan render loop<br>Rasterizer</li>
+							<li><span>Internships</span><br>TurboJet Engines maintenance - AirFrance Industries<br>Unannounced project - Celyosa Games</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2023</span><br>AEC - GameEngine Programmer</li>
+							<li><span>2021</span><br>French Baccalaureate</li>
+							<li><span>2017</span><br>BIA - (Pilot diploma)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------contact------>
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-solid fa-envelope"></i> kouroslf@gmail.com</p>
+					<p><i class="fa-solid fa-phone"></i> +33 6 95 39 30 45</p>
+					<div class="social-icons">
+						<a href="https://www.linkedin.com/in/kouros-lotfi-b61990230/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://github.com/Kouros26" target="_blank"><i class="fa-brands fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+	var tabLinks = document.getElementsByClassName("tab-links");
+	var tabContents = document.getElementsByClassName("tab-contents");
+
+	function openTab(pTabName) {
+		for (tabLink of tabLinks) {
+			tabLink.classList.remove("active-link");
+		}
+
+		for (tabContent of tabContents) {
+			tabContent.classList.remove("active-tab");
+		}
+
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(pTabName).classList.add("active-tab");
+	}
+
+	</script>
+
+</body>
+</html>
