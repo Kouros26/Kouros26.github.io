@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/Maul.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(20,0,0,1)), url(images/background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -35,7 +35,7 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 5%;
 }
 
 nav ul li {
@@ -78,6 +78,7 @@ nav ul li a:hover:after {
 
 .header-text h1 span {
     color: #860111;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 /*===================About===============*/
@@ -215,13 +216,14 @@ nav ul li a:hover:after {
 
 .layer span {
     color: #DA0037;
+    display: inline-block;
 }
 
 .layer a {
     margin-top: 20px;
     color: #DA0037;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 250%;
     line-height: 60%;
     /*    border-radius: 50%;*/
     text-align: center;
