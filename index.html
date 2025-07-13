@@ -34,7 +34,7 @@
 			<h1 class="sub-title">My Work</h1>
 			<div class="work-list">
 				<div class="work">
-					<img src="images/MRGA.png">
+					<img src="images/MRGA.png"></img>
 					<div class="layer">
 						<h3>Make Racing Great Again</h3>
 						<p>
@@ -49,7 +49,7 @@
 				</div>
 
 				<div class="work">
-					<img src="images/thunderbird.png">
+					<img src="images/thunderbird.png"></img>
 					<div class="layer">
 						<h3>ThunderBird</h3>
 						<p>
@@ -65,7 +65,7 @@
 				</div>
 
 				<div class="work">
-					<img src="images/gigengine.png">
+					<img src="images/gigengine.png"></img>
 					<div class="layer">
 						<h3>Gigen-Engine</h3>
 						<p>
@@ -79,11 +79,11 @@
 				</div>
 
 				<div class="work">
-					<img src="images/OnlineChess.png">
+					<img src="images/OnlineChess.png"></img>
 					<div class="layer">
 						<h3>Multiplayer Chess</h3>
 						<p>
-							Local Multiplayer game on Unity made using only the C# socket library. This projects also features a network-wide server discovery system, an online chat and a real-time color picker<br><br>
+							Unity - Local Multiplayer game made using only the C# socket library. This project also features a network-wide server discovery system, an online chat and a real-time color picker<br><br>
 							<span>Team :</span><br>2 programmers<br><span>Time :</span><br>1 week<br><span>My major contributions :</span><br>Networking<br>Server Discovery
 						</p>
 						<span>
@@ -92,6 +92,35 @@
 						</span>
 					</div>
 				</div>
+
+				<div class="work">
+					<img src="images/techArt.png"></img>
+					<div class="layer">
+						<h3>Tech Art Destruction</h3>
+						<p>
+							Unreal Engine 4.27 - Tech Art experimental project where the map can be both sliced and destroyed.<br><br>Github project is private as an actual game is in development<br><br>
+							<span>Team :</span><br>2 programmers and 4 artists<br><span>Time :</span><br>2 weeks<br><span>My major contributions :</span><br>3C<br>Destruction
+						</p>
+						<span>
+							<a href="https://youtu.be/SeAypW0hZ88" class="link" target="_blank"><i class="fa-brands fa-youtube" style="color: #f0f1f3;"></i></a>
+						</span>
+					</div>
+				</div>
+
+				<div class="work">
+					<video class="mp4" src="videos/VertexAnimation.mp4" muted></video>
+					<div class="layer">
+						<h3>Morph Targets</h3>
+						<p>
+							Experiments with Morph Targets (Vertex Animation) as a side project, in C++ on a custom OpenGL renderer<br>
+							<span>Team :</span><br>Solo programmer<br><span>Time :</span><br>2 weeks<br><span>My major contributions :</span><br>OpenGL Renderer<br>Vertex Animation
+						</p>
+						<span>
+							<a href="https://github.com/Kouros26/Animator" class="link" target="_blank"><i class="fa-brands fa-github" style="color: #f0f1f3;"></i></a>
+						</span>
+					</div>
+				</div>
+
 			</div>
 			<a class="btn">See More</a>
 		</div>
@@ -103,7 +132,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="about-col1">
-					<img src="images/гопник.jpg"/>
+					<img src="images/picture.jpg"/>
 					<a href="images/CV-KourosLotfi.pdf" download class="btn btn2">Download CV</a>
 				</div>
 				<div class="about-col2">
@@ -119,16 +148,20 @@
 					<div class="tab-contents active-tab" id="skills">
 						<ul>
 							<li><span>Languages</span><br>C++<br>C#<br>C</li>
-							<li><span>Engines</span><br>Unreal Engine 5.x<br>Unity</li>
+							<li><span>Engines</span><br>Unreal Engine<br>Unity</li>
 							<li><span>APIs</span><br>OpenGL (Legacy to 4.6)<br>Vulkan</li>
 						</ul>
 					</div>
 
 					<div class="tab-contents" id="experience">
 						<ul>
-							<li><span>Projects - Gameplay</span><br>Car racing game (Unreal Engine 5.1) - March 2023<br>Overcooked-like party game (Unity) - March 2022</li>
-							<li><span>Projects - Engine</span><br>Game Engine (OpenGL 4.6, GLFW, BULLET) - April to June 2023<br>Animation Programming - February 2023<br>Vulkan render loop - February 2023<br>Rasterizer - February 2022</li>
-							<li><span>Internships</span><br>TurboJet Engines maintenance - AirFrance Industries - June 2018<br>Unannounced project - Celyosa Games - since November 2022</li>
+							<!-- <li><span>Projects - Gameplay</span><br>Car racing game (Unreal Engine 5.1) - March 2023<br>Overcooked-like party game (Unity) - March 2022</li>
+							<li><span>Projects - Engine</span><br>Game Engine (OpenGL 4.6, GLFW, BULLET) - April to June 2023<br>Animation Programming - February 2023<br>Vulkan render loop - February 2023<br>Rasterizer - February 2022</li> -->
+							<li><span>Internships</span>
+								<br>Online/Gameplay programming Unannounced project - LOB'PSE - January 2024 to August 2024
+								<br>Gameplay programming Unannounced project - Celyosa Games - September 2022 to December 2022
+								<br>TurboJet engine maintenance - AirFrance Industries - June 2018
+							</li>
 						</ul>
 					</div>
 
@@ -178,6 +211,19 @@
 		event.currentTarget.classList.add("active-link");
 		document.getElementById(pTabName).classList.add("active-tab");
 	}
+
+	document.querySelectorAll('.work').forEach(work => {
+		const video = work.querySelector('video');
+
+		work.addEventListener('mouseenter', () => {
+			video.play();
+		});
+
+		work.addEventListener('mouseleave', () => {
+			video.pause();
+			video.currentTime = 0;
+		});
+	});
 
 	</script>
 
